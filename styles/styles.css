@@ -1,0 +1,97 @@
+/*  General Styling  */
+* {
+	box-sizing: border-box;
+}
+
+
+/*  Content Styling  */
+body{
+	font-size: 0;
+	font-family: sans-serif;
+}
+
+#container {
+	margin: auto;
+	max-width: 68.2%;
+}
+
+.row div {
+		display: inline-block;
+		vertical-align: top;
+}
+
+/*For our three divs w/i the row, we want to space them out
+in the ratio of 60% 20% 20% (which makes 100% width),
+so it fills out the width of the row.*/
+
+.timestamp{
+	font-size: 8px;
+	width: 20%; 
+}
+
+h2{
+	color: #8dd0db;
+	text-align: -webkit-right;
+	margin: 0;
+}
+
+h3{
+	color: #6cbfee;
+	font-size: 30px;
+	text-align: -webkit-right;
+	margin: 0;
+}
+
+.icon{
+	font-size: 16px;
+	color: violet;
+	width: 20%;
+	text-align: center; /*This centers our icon in the div*/
+}
+
+.phone{
+	background: #6cbfee;
+	color: #fff;
+	border: 3px solid violet;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+h1{
+	font-size: 20px;
+}
+
+.content p{
+	font-size: 14px;
+}
+
+.content{
+	font-size: 16px;
+	width: 60%;
+	background: #6cbfee;
+	color: #fff;
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+@media only screen and (max-width: 640px) {
+	.row .content {
+		display: block;
+		width: 100%;
+	}
+	/*This will help move the icon above the content when
+	shrink page.*/
+	.row .icon{
+		vertical-align: bottom;
+		margin-left: 60%;
+	}
+}
+
+
+
+
+
+
+
+
+
